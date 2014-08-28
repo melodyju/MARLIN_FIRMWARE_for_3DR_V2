@@ -277,7 +277,7 @@
 // #define COREXY
 
 // corse Endstop Settings
-//#define ENDSTOPPULLUPS // Comment this out (using // at the start of the line) to disable the endstop pullup resistors
+#define ENDSTOPPULLUPS // Comment this out (using // at the start of the line) to disable the endstop pullup resistors
 
 //#ifndef ENDSTOPPULLUPS
   // fine Enstop settings: Individual Pullups. will be ignord if ENDSTOPPULLUPS is defined
@@ -299,9 +299,9 @@
 #endif
 
 // The pullups are needed if you directly connect a mechanical endswitch between the signal and ground pins.
-const bool X_ENDSTOPS_INVERTING = true; // set to true to invert the logic of the endstops.    //Richrap changed from false
-const bool Y_ENDSTOPS_INVERTING = true; // set to true to invert the logic of the endstops.    //Richrap changed from false
-const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of the endstops.    //Richrap changed from false
+const bool X_ENDSTOPS_INVERTING = false; // set to true to invert the logic of the endstops.    //Richrap changed from false
+const bool Y_ENDSTOPS_INVERTING = false; // set to true to invert the logic of the endstops.    //Richrap changed from false
+const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of the endstops.    //Richrap changed from false
 //#define DISABLE_MAX_ENDSTOPS
 #define DISABLE_MIN_ENDSTOPS
 
