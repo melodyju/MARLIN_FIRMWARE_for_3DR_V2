@@ -67,11 +67,11 @@
 #define DELTA_SEGMENTS_PER_SECOND 100
 
 // Center-to-center distance of the holes in the diagonal push rods.
-#define DELTA_DIAGONAL_ROD 153.0 // mm            // Was 240.0 mm
+#define DELTA_DIAGONAL_ROD 220.0 // mm            // Was 240.0 mm
                                                   // V2 of 3DR = 153mm rods
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 111.9 // mm         // For 3DR Version 2 - this number was lowered a little - to stop the hotend diging into the model.
+#define DELTA_SMOOTH_ROD_OFFSET 182 // mm         // For 3DR Version 2 - this number was lowered a little - to stop the hotend diging into the model.
                                                   // 3DR Version 1 = 112.5mm
                                                   // Tried 111.5 still high in the middle and low at the ends - Was 172.0 mm
                                                   // Lowering this number makes the hot-end raise in the middle at 109.5 it was too high
@@ -86,7 +86,7 @@
 #define DELTA_EFFECTOR_OFFSET 33.0 // mm          // Was 42.0 mm
 
 // Horizontal offset of the universal joints on the carriages. (This is measured from the edge of the M6mm Rod to the cent of universal joint, 14mm on Mini Delta (3DR)
-#define DELTA_CARRIAGE_OFFSET 14.0 // mm         // Was 25.0 // mm
+#define DELTA_CARRIAGE_OFFSET 25.0 // mm         // Was 25.0 // mm
 
 // Effective horizontal distance bridged by diagonal push rods.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
